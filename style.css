@@ -39,14 +39,14 @@
 
 @keyframes pipe-animation {
     from{
-        right: -80;
+        right: -80px;
     }
     to{
         right: 100%;
     }
 }
 
-@keyframes jump{
+@keyframes jump {
     0% {
         bottom: 0;
     }

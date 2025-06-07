@@ -18,10 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
 
         pipe.style.animation = 'none';
-        pipe.style.right = `${pipePosition}px`;
-        
-        pipe.style.animation = 'none';
-        pipe.style.left = `${marioPosition}px`;
+        pipe.style.left = `${pipePosition}px`;
         
         mario.src = './imagens/game-over.png';
         mario.style.width = '75px';

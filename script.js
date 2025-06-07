@@ -33,5 +33,5 @@ document.addEventListener ("keydown", jump);
 });
 
 function restartGame() {
-    location.reload();
+    location.reload.href = window.location.href;
 }

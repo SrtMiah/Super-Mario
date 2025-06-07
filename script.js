@@ -5,9 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const jump = () => {
         mario.classList.add("jump");
-
         setTimeout(() => {
-            mario.classList.remove("jump");
+        mario.classList.remove("jump");
         }, 500);
     };
 
@@ -16,10 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', " ");
 
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+        document.getElementById("restartBtn").style.display = "block";
 
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
-        
+
         mario.src = './imagens/game-over.png';
         mario.style.width = '75px';
         mario.style.marginLeft = '50px';

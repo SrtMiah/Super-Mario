@@ -25,8 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
         mario.style.marginLeft = '50px';
 
         clearInterval(loop);
+        document.getElementById("restartBtn").style.display = "block";
     }
 }, 10);
 
 document.addEventListener ("keydown", jump);
 });
+
+function restartGame() {
+    location.reload();
+}
